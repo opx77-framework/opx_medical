@@ -56,3 +56,8 @@ Config.items = {
 	bandage = { enabled = true, heal = 25 },
 	medkit = { enabled = true, heal = 60 },
 }
+
+-- Update check at start: compares this version with the one published on GitHub and prints a line in the
+-- server console when an update is out. Needs outbound HTTP in server.jsonc ("http": "enabled": true, with
+-- "raw.githubusercontent.com" in "allowedHosts"). false = no request.
+Config.versionCheck = true

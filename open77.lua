@@ -25,6 +25,7 @@ permissions {
     "players.screen",        -- server: fade around the hospital respawn (Config.respawn.fade)
     "input.actions",         -- client: RegisterKeyMapping / Open77.input.keyFor (the emergency menu key)
     "ui.vanilla.map",        -- client: hospital pins (Config.blips)
+    "http.request", -- server: Open77.http.get (update check, Config.versionCheck)
 }
 
 shared_script "config.lua"
@@ -35,6 +36,7 @@ server_scripts {
     "server/calls.lua",
     "server/main.lua",
     "server/items.lua",
+    "server/version.lua",
 }
 
 client_script "client/main.lua"
